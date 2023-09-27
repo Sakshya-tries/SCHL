@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li {
+    margin-right: 20px;
+    font-size: large;
+    list-style: none;
+    padding: 20px 35px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+
+.navlist li a:hover {
+    color: greenyellow;
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.5) url("images/bg.jpg");
+    background-blend-mode: lighten;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.headingMain {
+    color: darkblue;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.white {
+    background-color: rgba(242, 242, 242, 0.8);
+    padding: 20px;
+    border-radius: 50px;
+    width: 30%;
+    margin: auto;
+    color: #343a40;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    padding: 10px;
+}
+
+.gap {
+    background-color: #343a40;
+    height: 62px;
+}
+
+.banner {
+    width: 100%;
+    height: 56.25%;
+    position: absolute;
+    background-image: url('images/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: slider 9s infinite;
+}
+
+@keyframes slider {
+
+    0%, 100% {
+        background-image: url('images/banner1.jpg');
+    }
+
+    35% {
+        background-image: url('images/banner2.jpg');
+    }
+
+    75% {
+        background-image: url('images/banner3.jpg');
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        background-color: #252a2e;
+    }
+
+    .navlist {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navlist li {
+        margin: 10px 0;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .headingMain {
+        font-size: 24px;
+    }
+
+    .white {
+        width: 90%;
+    }
+
+    .slider {
+        height: 300px;
+    }
+    
+    .banner{
+    background-image: url('images/mbanner1.jpg');
+    }
+
+    @keyframes slider {
+
+        0%,
+        100% {
+            background-image: url('images/mbanner1.jpg');
+        }
+
+        35% {
+            background-image: url('images/mbanner2.jpg');
+        }
+
+        75% {
+            background-image: url('images/mbanner3.jpg');
+        }
+    }
+}
+
+
+img {
+    width: 100%;
+}
+
+button {
+    border: 4px solid #343a40;
+    background-color: rgba(52, 58, 64, 0.8);
+    border-radius: 15px;
+    height: auto;
+    width: 80%;
+    font-size: 23px;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
