@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li {
+    margin-right: 20px;
+    font-size: large;
+    list-style: none;
+    padding: 20px 35px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+
+.navlist li a:hover {
+    color: greenyellow;
+}
+
+.logo img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ----------------------MAIN---------------------- */
+.main{
+    background: rgba(174, 229, 255, 0.3);
+    padding: 20px 50px;
+    font-size: 22px;
+    text-align: center;
+}
+table{
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 50px;
+}
+h1{
+    text-decoration: underline;
+    color: darkblue;
+    padding: 25px 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.contact_table{
+    width: 95%;;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8) url('../images/kipm.png');
+    background-blend-mode: lighten;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    text-align: left;
+}
+.contact_table th, td{
+    text-align: center;
+}
+footer{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #343a40;
+    color: white;
+}
+/* ----------------------RESPONSIVENESS---------------------- */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    .navbar ul {
+        width: 100%;
+        background-color: #252a2e;
+    }
+    .navlist {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .navlist li {
+        margin: 10px 0;
+    }
+    .main {
+        padding: 20px 5px;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .contact_table{
+        border-spacing: 5px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+    footer{
+        font-size: 10px;
+    }
+}

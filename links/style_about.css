@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.navbar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li {
+    margin-right: 20px;
+    font-size: large;
+    list-style: none;
+    padding: 20px 35px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+
+.navlist li a:hover {
+    color: greenyellow;
+}
+.main{
+    padding: 20px 50px;
+    font-size: 20px;
+    background: rgba(174, 229, 255, 0.3) url('../images/logo_light.png');
+    background-blend-mode: lighten;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.list{
+    padding: 10px 20px;
+    list-style: disc;
+}
+.list li{
+    padding: 6px 0px;
+}
+h1{
+    padding: 15px 0px;
+    color: darkblue;
+}
+h2, h3{
+    padding: 15px 0px;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navlist li {
+        margin: 10px 0;
+    }
+
+    .main {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .navbar ul {
+        width: 100%;
+        background-color: #252a2e;
+    }
+    .list {
+        padding: 10px 20px;
+        list-style: disc;
+    }
+    .list li {
+        padding: 6px 0;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    h2, h3{
+        padding: 15px 0;
+    }
+}
+
